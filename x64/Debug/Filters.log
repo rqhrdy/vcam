@@ -1,0 +1,118 @@
+﻿  Dll.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(20225,5): error C3861: '__stosb': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(22853,27): error C3861: '__readgsqword': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(22864,19): error C3861: '__readgsqword': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9473,23): error C3861: '_InterlockedIncrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9482,28): error C3861: '_InterlockedIncrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9494,32): error C2065: 'InterlockedIncrement64': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9505,28): error C3861: '_InterlockedDecrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9514,28): error C3861: '_InterlockedDecrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9526,32): error C2065: 'InterlockedDecrement64': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9540,23): error C3861: '_InterlockedExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9550,28): error C3861: '_InterlockedExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9562,31): error C3861: 'InterlockedExchange64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9574,23): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9584,23): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9594,28): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9604,28): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9616,31): error C3861: 'InterlockedExchangeAdd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9626,31): error C3861: 'InterlockedExchangeAdd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9639,23): error C3861: '_InterlockedCompareExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9650,28): error C3861: '_InterlockedCompareExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9663,31): error C3861: '_InterlockedCompareExchange64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9673,31): error C3861: 'InterlockedAnd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9683,31): error C3861: 'InterlockedOr64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9693,31): error C3861: 'InterlockedXor64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\stralign.h(120,38): warning C4090: 'argument': different '__unaligned' qualifiers
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(203,1): error C2665: 'InterlockedExchange': none of the 3 overloads could convert all the argument types
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9557,1): message : could be 'unsigned __int64 InterlockedExchange(volatile unsigned __int64 *,unsigned __int64)'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9545,1): message : or       'unsigned long InterlockedExchange(volatile unsigned long *,unsigned long)'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9535,1): message : or       'unsigned int InterlockedExchange(volatile unsigned int *,unsigned int)'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(203,1): message : while trying to match the argument list '(PLONG, LONG)'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(370,5): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(371,9): error C2065: 'cld': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(372,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(372,9): error C2065: 'mov': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(372,17): error C2146: syntax error: missing ';' before identifier 'ecx'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(372,17): error C2065: 'ecx': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(373,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(373,9): error C2065: 'mov': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(373,17): error C2146: syntax error: missing ';' before identifier 'edi'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(373,17): error C2065: 'edi': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(374,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(374,9): error C2065: 'mov': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(374,17): error C2146: syntax error: missing ';' before identifier 'eax'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(374,17): error C2065: 'eax': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(375,9): error C2146: syntax error: missing ';' before identifier 'repne'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(375,9): error C2065: 'repne': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(375,17): error C2146: syntax error: missing ';' before identifier 'scasb'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(375,17): error C2065: 'scasb': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(376,9): error C2146: syntax error: missing ';' before identifier 'jnz'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(376,9): error C2065: 'jnz': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(376,17): error C2146: syntax error: missing ';' before identifier 'exit_memchr'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(376,17): error C2065: 'exit_memchr': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(377,9): error C2146: syntax error: missing ';' before identifier 'dec'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(377,9): error C2065: 'dec': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(377,17): error C2146: syntax error: missing ';' before identifier 'edi'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(377,17): error C2065: 'edi': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(379,9): error C2146: syntax error: missing ';' before identifier 'mov'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(379,9): error C2065: 'mov': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(379,17): error C2146: syntax error: missing ';' before identifier 'pRet'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(379,23): error C2065: 'edi': undeclared identifier
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(380,1): error C2146: syntax error: missing ';' before identifier 'exit_memchr'
+C:\Users\richa\Downloads\obs-virtual-cam-master\obs-virtual-cam-master\dshowdeps\include\wxutil.h(381,5): error C2059: syntax error: '}'
+C:\Users\richa\Downloads\vcam\vcam\Filters\filters.h(3,10): fatal error C1083: Cannot open include file: 'opencv2/core.hpp': No such file or directory
+  Filters.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(20225,5): error C3861: '__stosb': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(22853,27): error C3861: '__readgsqword': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(22864,19): error C3861: '__readgsqword': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9473,23): error C3861: '_InterlockedIncrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9482,28): error C3861: '_InterlockedIncrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9494,32): error C2065: 'InterlockedIncrement64': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9505,28): error C3861: '_InterlockedDecrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9514,28): error C3861: '_InterlockedDecrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9526,32): error C2065: 'InterlockedDecrement64': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9540,23): error C3861: '_InterlockedExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9550,28): error C3861: '_InterlockedExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9562,31): error C3861: 'InterlockedExchange64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9574,23): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9584,23): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9594,28): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9604,28): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9616,31): error C3861: 'InterlockedExchangeAdd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9626,31): error C3861: 'InterlockedExchangeAdd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9639,23): error C3861: '_InterlockedCompareExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9650,28): error C3861: '_InterlockedCompareExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9663,31): error C3861: '_InterlockedCompareExchange64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9673,31): error C3861: 'InterlockedAnd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9683,31): error C3861: 'InterlockedOr64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9693,31): error C3861: 'InterlockedXor64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\stralign.h(120,38): warning C4090: 'argument': different '__unaligned' qualifiers
+C:\Users\richa\Downloads\vcam\vcam\Filters\Filters.cpp(6,10): fatal error C1083: Cannot open include file: 'opencv2/core.hpp': No such file or directory
+  stdafx.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(20225,5): error C3861: '__stosb': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(22853,27): error C3861: '__readgsqword': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winnt.h(22864,19): error C3861: '__readgsqword': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9473,23): error C3861: '_InterlockedIncrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9482,28): error C3861: '_InterlockedIncrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9494,32): error C2065: 'InterlockedIncrement64': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9505,28): error C3861: '_InterlockedDecrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9514,28): error C3861: '_InterlockedDecrement': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9526,32): error C2065: 'InterlockedDecrement64': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9540,23): error C3861: '_InterlockedExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9550,28): error C3861: '_InterlockedExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9562,31): error C3861: 'InterlockedExchange64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9574,23): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9584,23): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9594,28): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9604,28): error C3861: '_InterlockedExchangeAdd': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9616,31): error C3861: 'InterlockedExchangeAdd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9626,31): error C3861: 'InterlockedExchangeAdd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9639,23): error C3861: '_InterlockedCompareExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9650,28): error C3861: '_InterlockedCompareExchange': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9663,31): error C3861: '_InterlockedCompareExchange64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9673,31): error C3861: 'InterlockedAnd64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9683,31): error C3861: 'InterlockedOr64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9693,31): error C3861: 'InterlockedXor64': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\stralign.h(120,38): warning C4090: 'argument': different '__unaligned' qualifiers
+  Generating Code...

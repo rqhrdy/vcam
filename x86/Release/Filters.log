@@ -1,0 +1,4 @@
+﻿  Filters.cpp
+     Creating library .\x86\Release\VCam.lib and object .\x86\Release\VCam.exp
+legacy_stdio_wide_specifiers.lib(legacy_stdio_wide_specifiers.obj) : warning LNK4210: .CRT section exists; there may be unhandled static initializers or terminators
+  Filters.vcxproj -> C:\Users\richa\Downloads\vcam\vcam\Filters\.\x86\Release\Filters.dll
