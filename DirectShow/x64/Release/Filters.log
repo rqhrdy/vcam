@@ -1,0 +1,6 @@
+﻿  Dll.cpp
+  Filters.cpp
+C:\DirectShow\Filters.cpp(123,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1288,5): warning MSB8012: TargetPath(C:\DirectShow\x64\Release\Filters.dll) does not match the Linker's OutputFile property value (C:\DirectShow\Release\Filters.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library .\Release\VCam.lib and object .\Release\VCam.exp
+  Filters.vcxproj -> C:\DirectShow\x64\Release\Filters.dll
