@@ -42,7 +42,6 @@ STDAPI AMovieSetupUnregisterServer(CLSID clsServer);
 DEFINE_GUID(CLSID_VirtualCam,
     0xe3050b51, 0x345c, 0x4991, 0x9b, 0x77, 0xcc, 0x54, 0x06, 0x5b, 0x5c, 0x19);
 
-
 const AMOVIESETUP_MEDIATYPE AMSMediaTypesVCam =
 {
     &MEDIATYPE_Video,

@@ -1,2 +1,3 @@
-﻿     Creating library .\x64\Release\VCam.lib and object .\x64\Release\VCam.exp
-  Filters.vcxproj -> C:\Users\richa\Downloads\vcam\vcam\Filters\x64\Release\Filters.dll
+﻿  Dll.cpp
+     Creating library .\x64\Release\VCam.lib and object .\x64\Release\VCam.exp
+  Filters.vcxproj -> C:\Users\richa\Documents\GitHub\vcam\x64\Release\Filters.dll

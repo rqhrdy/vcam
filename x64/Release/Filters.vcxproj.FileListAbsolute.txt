@@ -1,1 +1,2 @@
 C:\Users\richa\Downloads\vcam\vcam\Filters\x64\Release\Filters.dll
+C:\Users\richa\Documents\GitHub\vcam\x64\Release\Filters.dll
