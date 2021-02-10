@@ -19,6 +19,7 @@ public:
     STDMETHODIMP QueryInterface(REFIID riid, void** ppv);
 
     IFilterGraph* GetGraph() { return m_pGraph; }
+    void getFrame(BYTE* pData, long arrLen, int pinNumber);
 
 private:
     CVCam(LPUNKNOWN lpunk, HRESULT* phr);

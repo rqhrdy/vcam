@@ -78,8 +78,8 @@
     <LinkIncremental>false</LinkIncremental>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
     <LibraryWPath>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\winrt;$(LibraryWPath)</LibraryWPath>
-    <IncludePath>C:\Users\richa\Downloads\obs-virtual-cam-master %281%29\obs-virtual-cam-master\dshowdeps\include;C:\Program Files %28x86%29\Windows Kits\10\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\ucrt\x64;C:\Users\richa\Downloads\obs-virtual-cam-master %281%29\obs-virtual-cam-master\dshowdeps\lib\x64;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\um\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\dshowdeps\include;C:\Program Files %28x86%29\Windows Kits\10\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\ucrt\x64;.\dshowdeps\lib\x64;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\um\x64;$(LibraryPath)</LibraryPath>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

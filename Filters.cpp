@@ -27,6 +27,28 @@ CUnknown* WINAPI CVCam::CreateInstance(LPUNKNOWN lpunk, HRESULT* phr)
     return punk;
 }
 
+
+void CVCam::getFrame(BYTE* pData, long arrLen, int pinNumber) {
+    for (int i = 0; i < arrLen; ++i) {
+        if (pinNumber == 1) {
+            if (i % 3 == 1)
+                pData[i] = i%255;
+            if (i % 3 == 2)
+                pData[i] = i%100;
+            else
+                pData[i] = 0;
+        }
+        else {
+            if (i % 3 == 1)
+                pData[i] = i%100;
+            if (i % 3 == 2)
+                pData[i] = i%255;
+            else
+                pData[i] = i%70;
+        }
+    }
+}
+
 CVCam::CVCam(LPUNKNOWN lpunk, HRESULT* phr) :
     CSource(NAME("Virtual Cam"), lpunk, CLSID_VirtualCam)
 {
@@ -100,7 +122,8 @@ HRESULT CVCamStream::FillBuffer(IMediaSample* pms)
     long lDataLen;
     pms->GetPointer(&pData);
     lDataLen = pms->GetSize();
-    for (int i = 0; i < lDataLen; ++i) {
+    m_pParent->getFrame(pData, lDataLen, numberForPin);
+    /*for (int i = 0; i < lDataLen; ++i) {
         if (numberForPin == 1) {
             if( i % 3 == 1)
                 pData[i] = 255;
@@ -112,7 +135,7 @@ HRESULT CVCamStream::FillBuffer(IMediaSample* pms)
         else {
             pData[i] = m_rtLastTime - avgFrameTime;
         }
-    }
+    }*/
     /*
     for (int i = 0; i < lDataLen; ++i) {
         if (numberForPin == 1) {
