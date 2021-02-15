@@ -4,6 +4,8 @@
 #pragma warning(disable:4244)
 #pragma warning(disable:4711)
 
+
+
 #include <stdlib.h>
 #include <streams.h>
 #include <stdio.h>
@@ -29,23 +31,27 @@ CUnknown* WINAPI CVCam::CreateInstance(LPUNKNOWN lpunk, HRESULT* phr)
 
 
 void CVCam::getFrame(BYTE* pData, long arrLen, int pinNumber) {
-    for (int i = 0; i < arrLen; ++i) {
-        if (pinNumber == 1) {
-            if (i % 3 == 1)
-                pData[i] = i%255;
-            if (i % 3 == 2)
-                pData[i] = i%100;
-            else
-                pData[i] = 0;
-        }
-        else {
-            if (i % 3 == 1)
-                pData[i] = i%100;
-            if (i % 3 == 2)
-                pData[i] = i%255;
-            else
-                pData[i] = i%70;
-        }
+    if (pinNumber == 1) {
+        capture.read(currentFrame);
+        int size = currentFrame.total() * currentFrame.elemSize();
+
+        cv::Mat flip;
+        cv::flip(currentFrame, flip, 0);
+        std::memcpy(currentFrameData, flip.data, size * sizeof(byte));
+        std::memcpy(currentFrameData2, flip.data, size * sizeof(byte));
+
+        //std::memcpy(pData, currentFrame.data, size * sizeof(byte));
+        for (int i = 0; i < arrLen; i++)
+            pData[i] = currentFrameData[i];
+    }
+
+    else {
+        /*int size = currentFrame.total() * currentFrame.elemSize();
+        cv::Mat flip;
+        cv::flip(currentFrame, flip, 0);
+        std::memcpy(currentFrameData2, flip.data, size * sizeof(byte));*/
+        for (int i = 0; i < arrLen; i++)
+            pData[i] = currentFrameData2[i];
     }
 }
 
@@ -54,6 +60,20 @@ CVCam::CVCam(LPUNKNOWN lpunk, HRESULT* phr) :
 {
     ASSERT(phr);
     CAutoLock cAutoLock(&m_cStateLock);
+    int deviceID = 0;             // 0 = open default camera
+    int apiID = cv::CAP_ANY;      // 0 = autodetect default API
+    capture.open(0, apiID);
+    capture.read(currentFrame);
+    int size = currentFrame.total() * currentFrame.elemSize();
+    currentFrameData = new byte[size];  // you will have to delete[] that later
+    currentFrameData2 = new byte[size];  // you will have to delete[] that later
+
+    cv::Mat flip;
+
+    cv::flip(currentFrame, flip, 0);
+    std::memcpy(currentFrameData, flip.data, size * sizeof(byte));
+    std::memcpy(currentFrameData2, flip.data, size * sizeof(byte));
+
     // Create the one and only output pin
     //m_paStreams = (CSourceStream**) new CVCamStream * [1];
     //m_paStreams[0] = new CVCamStream(phr, this, L"Virtual Cam");
@@ -188,8 +208,8 @@ HRESULT CVCamStream::GetMediaType(int iPosition, CMediaType* pmt)
     pvi->bmiHeader.biCompression = BI_RGB;
     pvi->bmiHeader.biBitCount = 24;
     pvi->bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
-    pvi->bmiHeader.biWidth = 80 * iPosition;
-    pvi->bmiHeader.biHeight = 60 * iPosition;
+    pvi->bmiHeader.biWidth = 640; // 80 * iPosition;
+    pvi->bmiHeader.biHeight = 480; // 60 * iPosition;
     pvi->bmiHeader.biPlanes = 1;
     pvi->bmiHeader.biSizeImage = GetBitmapSize(&pvi->bmiHeader);
     pvi->bmiHeader.biClrImportant = 0;

@@ -76,10 +76,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath>.\opencv\install\bin;$(ExecutablePath)</ExecutablePath>
     <LibraryWPath>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\winrt;$(LibraryWPath)</LibraryWPath>
-    <IncludePath>.\dshowdeps\include;C:\Program Files %28x86%29\Windows Kits\10\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\ucrt\x64;.\dshowdeps\lib\x64;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\um\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\opencv\install\include;.\dshowdeps\include;C:\Program Files %28x86%29\Windows Kits\10\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\opencv\install\x64\vc16\lib;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\ucrt\x64;.\dshowdeps\lib\x64;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.19041.0\um\x64;$(LibraryPath)</LibraryPath>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -191,7 +191,7 @@
       <StackCommitSize>2097152</StackCommitSize>
       <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
       <ModuleDefinitionFile>.\Filters.def</ModuleDefinitionFile>
-      <AdditionalDependencies>vcruntime.lib;msvcrt.lib;strmbase.lib;winMM.lib;strmiids.lib;legacy_stdio_definitions.lib;ucrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_world440.lib;vcruntime.lib;msvcrt.lib;strmbase.lib;winMM.lib;strmiids.lib;legacy_stdio_definitions.lib;ucrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <NoEntryPoint>false</NoEntryPoint>
     </Link>
   </ItemDefinitionGroup>

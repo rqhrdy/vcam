@@ -2,6 +2,9 @@
 
 
 
+#include <opencv2/core.hpp>
+#include <opencv2/videoio.hpp>
+#include <opencv2/highgui.hpp>
 #include <stdlib.h>
 
 #define DECLARE_PTR(type, ptr, expr) type* ptr = (type*)(expr);
@@ -23,6 +26,12 @@ public:
 
 private:
     CVCam(LPUNKNOWN lpunk, HRESULT* phr);
+    cv::VideoCapture capture;
+    cv::Mat currentFrame;
+    byte* currentFrameData;
+    byte* currentFrameData2;
+
+
 };
 
 class CVCamStream : public CSourceStream, public IAMStreamConfig, public IKsPropertySet
